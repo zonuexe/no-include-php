@@ -34,6 +34,8 @@ class User
             $msg .= "持ち物は{$this->item->name}です。";
         }
 
+        throw new \Exception("ひゃっはーーーーーーーーー");
+
         return $msg;
     }
 }
