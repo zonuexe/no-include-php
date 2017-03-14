@@ -11,6 +11,7 @@
     ],
     "autoload": {
         "classmap": ["src/tools"],
+        "files": ["src/functions.php"],
         "psr-4": {
             "ZonuProject\\": "src/"
         }
