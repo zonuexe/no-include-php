@@ -6,8 +6,14 @@ namespace ZonuProject;
 
 require_once __DIR__ . '/../src/bootstrap.php';
 
-$user = new User("重音テト");
+$teto = new User("重音テト");
+
+$negi = new Item("ネギ");
+$miku = new User("初音ミク");
+$miku->setItem($negi);
+
 ?>
 <!DOCTYPE html>
 <title>自己紹介</title>
-<p><?= htmlspecialchars($user->saySelfIntroduce(), ENT_QUOTES) ?></p>
+<p><?= htmlspecialchars($teto->saySelfIntroduce(), ENT_QUOTES) ?></p>
+<p><?= htmlspecialchars($miku->saySelfIntroduce(), ENT_QUOTES) ?></p>

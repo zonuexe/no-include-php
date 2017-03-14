@@ -4,7 +4,11 @@ namespace ZonuProject;
 
 class User
 {
+    /** @var string */
     private $name;
+
+    /** @var Item */
+    private $item;
 
     /**
      * @param string $name
@@ -14,11 +18,22 @@ class User
         $this->name = $name;
     }
 
+    public function setItem(Item $item)
+    {
+        $this->item = $item;
+    }
+
     /**
      * @return string
      */
     public function saySelfIntroduce()
     {
-        return "こんにちは、私は{$this->name}です。";
+        $msg = "こんにちは、私は{$this->name}です。";
+
+        if ($this->item) {
+            $msg .= "持ち物は{$this->item->name}です。";
+        }
+
+        return $msg;
     }
 }
