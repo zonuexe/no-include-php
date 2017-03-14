@@ -17,3 +17,5 @@ $miku->setItem($negi);
 <title>自己紹介</title>
 <p><?= htmlspecialchars($teto->saySelfIntroduce(), ENT_QUOTES) ?></p>
 <p><?= htmlspecialchars($miku->saySelfIntroduce(), ENT_QUOTES) ?></p>
+<hr>
+<p><?= htmlspecialchars(\UltraHoge::fugafuga(), ENT_QUOTES) ?></p>
