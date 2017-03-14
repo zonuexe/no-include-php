@@ -1,0 +1,13 @@
+{
+    "name": "megurine/sample-php-app",
+    "description": "Test App",
+    "type": "project",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "USAMI Kenta",
+            "email": "tadsan@zonu.me"
+        }
+    ],
+    "require": {}
+}
