@@ -16,5 +16,7 @@
             "ZonuProject\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "filp/whoops": "^2.1"
+    }
 }
